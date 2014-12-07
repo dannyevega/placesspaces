@@ -1,0 +1,27 @@
+<%= erb :nav %>
+
+<div class="gravatar">
+  <% hash = Digest::MD5.hexdigest(@user.email) %>
+  <img src="http://www.gravatar.com/avatar/<%= hash %>"/><br>
+
+  <h2>hello, <%= @user.username %>. <br>where would you like to go?</h2><br>
+
+  <form id ="add_location" action="/home" method="post">
+    <input id="input" type="text" name="destination" placeholder="destination...">
+    <input id="submit" type="submit" name="Submit">
+  </form><br>
+
+  <h2>places i want to go.</h2>
+
+  <div id="insert" class="scroll">
+    <% @destinations.each do |destination| %>
+      <% if destination.visited == false %>
+        <li class="list"><a href="#"><%= destination.name %></a></li>
+        <button id="<%= destination.id %>" class="visited" type="button">I've been here</button><br><br>
+      <% end %>
+    <% end %>
+  </div>
+
+</div>
+
+<div id="map-canvas"></div>

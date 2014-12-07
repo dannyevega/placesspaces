@@ -1,0 +1,46 @@
+<div class="container">
+
+  <nav>
+    <div class="logo">
+      <h1><strong>places</strong> / <em style="color: red">spaces</em></h1>
+    </div>
+  </nav>
+
+  <div class="welcome balloon">
+    <h1>Log in</h1>
+
+      <% if @login_error %>
+        <div class="errors" style="color:red;"><%= @login_error %></div>
+      <% end %>
+
+      <form id="sign-in" method="post" action="/sessions">
+        <label class="label" for="email">Email</label>
+          <input type="text" name="email" placeholder="email address"><br><br>
+
+        <label class="label" for="password">Password</label>
+          <input type="password" name="password" placeholder="password"><br><br>
+
+        <div class="submit"><input type="submit" value="Sign In"></div>
+      </form>
+
+    <h1>New to places / <em style="color: red">spaces</em> ? <br>Sign up here.</h1>
+
+      <% if @error %>
+        <div class="errors"><%= @error %></div>
+      <% end %>
+
+      <form id="sign-up" method="post" action="/users">
+        <label class="label" for="username">Username</label>
+          <input type="text" name="user[username]" placeholder="username"><br><br>
+
+        <label class="label" for="email">Email</label>
+          <input type="text" name="user[email]" placeholder="email address"><br><br>
+
+        <label class="label" for="password">Password</label>
+          <input type="password" name="user[password]" placeholder="password"><br><br>
+
+        <div class="submit"><input type="submit" value="Sign up"></div>
+      </form>
+  </div>
+
+</div>

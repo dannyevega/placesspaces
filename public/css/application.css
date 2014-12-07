@@ -1,0 +1,142 @@
+.container {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  top:0;
+  position: fixed;
+  padding: 3px;
+  width: 100%;
+  height: 60px;
+  background-color: #313A4C;
+  color: rgb(232, 233, 242);
+  overflow: hidden;
+  text-align: right;
+}
+
+nav h1 {
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  float: left;
+  color: black;
+  margin: 0px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+  color: gray;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.welcome {
+  padding-top: 120px;
+  height: 104%;
+}
+
+.form {
+  width: 500px;
+  clear: both;
+  width: 100%;
+  clear: both;
+}
+
+.balloon {
+  background-image: url('/images/balloon.jpg');
+  background-size: cover;
+}
+
+.splat-map {
+  background-image: url('/images/splat-map.jpg');
+  background-size: cover;
+}
+
+.gravatar {
+  margin-top: 120px;
+  margin-left: 50px;
+  float: left;
+  width: 30%;
+}
+
+.destination {
+  width: 100%;
+  margin: 20px auto;
+  padding-top: 5px;
+  padding-left: 30px;
+}
+
+.greeting {
+  padding-left: 32px;
+}
+
+#map-canvas {
+  width: 60%;
+  height: 90%;
+  margin-top: 135px;
+  margin-right: 60px;
+  /*margin: 0px;*/
+  float: right;
+}
+
+html, body {
+  width: 100%;
+  height: 90%;
+  /*margin: 0px;*/
+}
+
+#insert {
+  list-style: none;
+}
+
+.list {
+  list-style: none;
+}
+
+#button {
+  margin-right: 40px;
+  padding: 0.7em;
+  border-radius: 10px;
+}
+
+.scroll {
+  height:200px;
+  width:49%;
+  border:1px
+  solid #ccc;
+  font:16px/26px Georgia, Garamond, Serif;overflow:auto;"
+  list-style: none;
+  padding: 1em;
+  border-radius: 5%;
+}
+
+#input {
+  padding: 0.7em;
+  border-radius: 10px;
+}
+
+#submit {
+  padding: 0.7em;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.visited {
+  padding: 0.3em;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+#destination_font {
+  font-size: 20px;
+}

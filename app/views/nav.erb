@@ -1,0 +1,13 @@
+<nav>
+  <ul>
+    <form id="button" action="/sessions/<%= current_user.id %>" method="post">
+      <input name="_method" type="hidden" value="delete" />
+      <button id="button" type="submit" value="Sign Out">Sign Out</button>
+      <a href="/home"><em style="color: red">home</em></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="/users/<%= @user.id %>/update"><em style="color: red">places I've been</em></a>
+    </form>
+  </ul>
+
+  <h1><strong>places</strong> / <em style="color: red">spaces</em></h1>
+</nav>
+
